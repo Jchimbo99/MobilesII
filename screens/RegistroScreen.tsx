@@ -138,7 +138,6 @@ const styles = StyleSheet.create({
     },
     switchContainer: {
         flexDirection: "row",
-        justifyContent: "space-between",
         alignItems: "center",
         marginVertical: 15,
     },
