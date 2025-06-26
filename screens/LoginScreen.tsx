@@ -18,24 +18,22 @@ export default function LoginScreen({ navigation }: any) {
         placeholder="Ingresar Contraseña"
         style={styles.input}
       />
-      <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate("Tab")}>
+      
+
+        <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate("Tab")}>
         <View style={styles.fila}>
 
 
-          <Text style={styles.txt}>Ir a Calculadora</Text>
+          <Text style={styles.txt}>Ir a Registro</Text>
           <Text>     </Text>
           <Entypo name="login" size={50} color="#adb512" />
         </View>
-        <Image source={require("../assets/images/calcu.png")} style={styles.img} />
+        
 
       </TouchableOpacity>
+      
 
-      <TouchableOpacity
-        style={[styles.btn, { marginTop: 20 }]}
-        onPress={() => navigation.navigate("Registro")}
-      >
-        <Text style={styles.txt}>Ir a Registro</Text>
-      </TouchableOpacity>
+      
     </View>
   )
 }

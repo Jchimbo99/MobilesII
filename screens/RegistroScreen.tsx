@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { Switch } from 'react-native-gesture-handler';
 
 export default function RegistroScreen({ navigation }: any) {
+
+
     const [nombre, setNombre] = useState("");
     const [apellido, setApellido] = useState("");
     const [email, setEmail] = useState("");
@@ -113,7 +115,9 @@ export default function RegistroScreen({ navigation }: any) {
             </View>
 
             <Button title="Registrarse" onPress={registrar} />
+            
         </ScrollView>
+        
     );
 }
 

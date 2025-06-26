@@ -6,12 +6,13 @@ import LoginScreen from "../screens/LoginScreen";
 import CalculadoraScreen from "../screens/CalculadoraScreen";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Entypo from '@expo/vector-icons/Entypo';
+import RegistroScreen from "../screens/RegistroScreen";
 
 const Tab = createBottomTabNavigator()
 
 function MyTab() {
     return (
-        <Tab.Navigator initialRouteName="Calculadora">
+        <Tab.Navigator initialRouteName="Registro">
             <Tab.Screen
                 name="Welcome"
                 component={WelcomeScreen}
@@ -28,7 +29,7 @@ function MyTab() {
                     tabBarIcon: () => (<Entypo name="login" size={24} color="black" />)
 
                 }} />
-            <Tab.Screen name="Calculadora" component={CalculadoraScreen} />
+            <Tab.Screen name="Registro" component={RegistroScreen} />
 
         </Tab.Navigator>
     )
